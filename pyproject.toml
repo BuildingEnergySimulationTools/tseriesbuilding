@@ -1,0 +1,48 @@
+[project]
+name = "tseriesbuilding"
+version = "0.1.0"
+description = "Generate time series for Building applications"
+readme = "README.md"
+license = { file = "LICENSE.md" }
+authors = [{ name = "Tessa Hubert", email = "tessa_hubert@hotmail.fr" }]
+maintainers = [
+    { name = "Tessa Hubert", email = "tessa_hubert@hotmail.fr" },
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.22.4, <2.0",
+    "pandas>=2.0.0, <3.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pre-commit>=3.3.3",
+]
+
+[project.urls]
+Source = "https://github.com/BuildingEnergySimulationTools/tseriesbuilding"
+
+
+[build-system]
+requires = ["flit_core<4"]
+build-backend = "flit_core.buildapi"
+
+[tool.ruff]
+fix = true
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.flit.module]
+name = "tseriesbuilding"
