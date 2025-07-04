@@ -3,7 +3,7 @@ name = "tseriesbuilding"
 version = "0.1.0"
 description = "Generate time series for Building applications"
 readme = "README.md"
-license = { file = "LICENSE.md" }
+license = { file = "LICENSE" }
 authors = [{ name = "Tessa Hubert", email = "tessa_hubert@hotmail.fr" }]
 maintainers = [
     { name = "Tessa Hubert", email = "tessa_hubert@hotmail.fr" },
